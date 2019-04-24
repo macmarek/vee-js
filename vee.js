@@ -6,6 +6,7 @@ function draw() {
     var canvas = document.getElementById('vee-canvas');
     if (canvas.getContext) {
         vee.ctx = canvas.getContext('2d');
+        vee.ctx.clearRect(0, 0, canvas.width, canvas.height);
         drawVee(canvas.width/2, 0);
     }
     else{
